@@ -27,7 +27,7 @@ const Sponsorship = () => (
 
     {/* Institutional Support */}
     <h3 className="font-orbitron font-semibold text-center text-lg mb-6">Institutional & Government Support</h3>
-    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-4 mb-12 max-w-4xl mx-auto">
       {institutional.map((s, i) => (
         <motion.div
           key={s}
@@ -35,7 +35,7 @@ const Sponsorship = () => (
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.06 }}
-          className="glass-card p-4 flex items-center justify-center hover:glow-aqua transition-all duration-500"
+          className="glass-card p-4 flex items-center justify-center hover:glow-aqua transition-all duration-500 w-[calc(33.333%-1rem)] min-w-[140px]"
         >
           <span className="font-orbitron text-[10px] font-semibold text-muted-foreground text-center leading-tight">{s}</span>
         </motion.div>

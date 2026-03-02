@@ -37,7 +37,7 @@ const Sponsorship = () => (
           transition={{ delay: i * 0.06 }}
           className="glass-card p-4 flex items-center justify-center hover:glow-aqua transition-all duration-500 w-[calc(33.333%-1rem)] min-w-[140px]"
         >
-          <span className="font-orbitron text-[10px] font-semibold text-muted-foreground text-center leading-tight">{s}</span>
+          <span className="font-orbitron text-xs font-semibold text-muted-foreground text-center leading-tight">{s}</span>
         </motion.div>
       ))}
     </div>

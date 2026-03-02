@@ -2,14 +2,32 @@ import { useEffect, useRef, useState } from "react";
 import SectionWrapper from "./SectionWrapper";
 import SectionHeading from "./SectionHeading";
 import { motion, useInView } from "framer-motion";
-import { Trophy, Calendar, Users, Award } from "lucide-react";
+import { Trophy, Calendar, Users, Award, Globe, MapPin } from "lucide-react";
 
-const timeline = [
-  { year: "2018", title: "Team Founded", desc: "Team SRM AUV was established at SRM University." },
-  { year: "2019", title: "First Competition", desc: "Participated in NIOT SAVe, India's premier AUV challenge." },
-  { year: "2020", title: "Design Innovation Award", desc: "Won the Best Design Award at National Robotics Championship." },
-  { year: "2022", title: "International Debut", desc: "Competed in RoboSub, San Diego — Top 20 globally." },
-  { year: "2024", title: "AI Integration", desc: "Implemented deep learning-based vision and autonomous planning." },
+const achievements = [
+  "National Champions at NIOT SAVe Competition",
+  "Top International Finish at SAUVC",
+  "Third Place at NEXUS 2024",
+  "Winner at MarianX 2025",
+];
+
+const recognition = [
+  "Government-sponsored international representation",
+  "I4C Innovation Challenge recognition",
+  "NVIDIA GPU Grant for advanced perception development",
+  "Sustained multi-year competitive presence",
+];
+
+const international = [
+  "AUVSI RoboSub, United States",
+  "Singapore Autonomous Underwater Vehicle Challenge",
+  "Underwater Robotics Challenge, Norway",
+];
+
+const national = [
+  "NIOT SAVe Competition",
+  "NEXUS, Chennai Institute of Technology",
+  "MarianX, VIT Vellore",
 ];
 
 const Counter = ({ end, label, icon: Icon }: { end: number; label: string; icon: any }) => {
@@ -45,43 +63,96 @@ const Counter = ({ end, label, icon: Icon }: { end: number; label: string; icon:
 
 const Achievements = () => (
   <SectionWrapper id="achievements">
-    <SectionHeading title="Achievements" subtitle="A legacy of excellence and innovation" />
+    <SectionHeading title="Achievements & Competitions" subtitle="Technical consistency, innovation, and competitive credibility" />
 
     {/* Counters */}
     <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-      <Counter end={6} label="Years Active" icon={Calendar} />
-      <Counter end={12} label="Competitions" icon={Trophy} />
-      <Counter end={8} label="Awards" icon={Award} />
-      <Counter end={60} label="Team Members" icon={Users} />
+      <Counter end={12} label="Years Active" icon={Calendar} />
+      <Counter end={10} label="Competitions" icon={Trophy} />
+      <Counter end={6} label="Awards" icon={Award} />
+      <Counter end={50} label="Team Members" icon={Users} />
     </div>
 
-    {/* Timeline */}
-    <div className="relative max-w-3xl mx-auto">
-      {/* Vertical line */}
-      <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-ocean via-aqua to-ocean/30" />
+    {/* Key Achievements & Recognition */}
+    <div className="grid md:grid-cols-2 gap-6 mb-16">
+      <motion.div
+        initial={{ opacity: 0, x: -30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="glass-card p-8"
+      >
+        <h3 className="font-orbitron font-semibold text-lg mb-5 flex items-center gap-2">
+          <Trophy className="text-accent" size={20} /> Key Achievements
+        </h3>
+        <ul className="space-y-3">
+          {achievements.map((a) => (
+            <li key={a} className="text-muted-foreground text-sm flex items-start gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 shrink-0" />
+              {a}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
 
-      {timeline.map((item, i) => (
-        <motion.div
-          key={item.year}
-          initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.1, duration: 0.5 }}
-          className={`relative flex items-start mb-12 ${
-            i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-          } flex-row`}
-        >
-          {/* Dot */}
-          <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-accent glow-aqua-strong z-10 mt-1" />
+      <motion.div
+        initial={{ opacity: 0, x: 30 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true }}
+        className="glass-card p-8"
+      >
+        <h3 className="font-orbitron font-semibold text-lg mb-5 flex items-center gap-2">
+          <Award className="text-accent" size={20} /> Recognition & Support
+        </h3>
+        <ul className="space-y-3">
+          {recognition.map((r) => (
+            <li key={r} className="text-muted-foreground text-sm flex items-start gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 shrink-0" />
+              {r}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+    </div>
 
-          {/* Card */}
-          <div className={`ml-12 md:ml-0 md:w-[45%] ${i % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
-            <span className="font-orbitron text-accent text-sm font-bold">{item.year}</span>
-            <h4 className="font-semibold text-lg mt-1">{item.title}</h4>
-            <p className="text-muted-foreground text-sm mt-1">{item.desc}</p>
-          </div>
-        </motion.div>
-      ))}
+    {/* Competitions */}
+    <div className="grid md:grid-cols-2 gap-6">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="glass-card p-8"
+      >
+        <h3 className="font-orbitron font-semibold text-lg mb-5 flex items-center gap-2">
+          <Globe className="text-accent" size={20} /> International Platforms
+        </h3>
+        <ul className="space-y-3">
+          {international.map((c) => (
+            <li key={c} className="text-muted-foreground text-sm flex items-start gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 shrink-0" />
+              {c}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        className="glass-card p-8"
+      >
+        <h3 className="font-orbitron font-semibold text-lg mb-5 flex items-center gap-2">
+          <MapPin className="text-accent" size={20} /> National Platforms
+        </h3>
+        <ul className="space-y-3">
+          {national.map((c) => (
+            <li key={c} className="text-muted-foreground text-sm flex items-start gap-2">
+              <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 shrink-0" />
+              {c}
+            </li>
+          ))}
+        </ul>
+      </motion.div>
     </div>
   </SectionWrapper>
 );

@@ -1,68 +1,43 @@
 import SectionWrapper from "./SectionWrapper";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
-import { Navigation, Eye, Map, Shield, Cpu, Anchor, Weight, Radio } from "lucide-react";
-import heroImage from "@/assets/hero-auv.jpg";
+import { Rocket } from "lucide-react";
 
-const specs = [
-  { icon: Anchor, label: "Depth Rating", value: "30m" },
-  { icon: Weight, label: "Weight", value: "25 kg" },
-  { icon: Radio, label: "Sensors", value: "DVL, IMU, Hydrophones" },
-  { icon: Cpu, label: "Onboard Computer", value: "NVIDIA Jetson" },
-];
-
-const features = [
-  { icon: Navigation, title: "Autonomous Navigation", desc: "GPS-denied underwater path planning using advanced algorithms." },
-  { icon: Eye, title: "Computer Vision", desc: "Real-time object detection and tracking with deep learning models." },
-  { icon: Map, title: "Underwater Mapping", desc: "Sonar-based environment mapping and SLAM integration." },
-  { icon: Shield, title: "Stability Control", desc: "6-DOF control system with adaptive PID and thruster allocation." },
+const vehicles = [
+  { year: "2014–2016", name: "Sedna", desc: "Established foundational underwater navigation and multi-axis control systems." },
+  { year: "—", name: "Alpheus", desc: "Improved structural robustness and subsystem coordination, enhancing maneuverability and reliability." },
+  { year: "—", name: "Zarna", desc: "Advanced mission readiness with enhanced sensing capabilities and structured task execution mechanisms." },
+  { year: "2023–2024", name: "Vatkhd", desc: "Focused on navigation refinement, perception enhancement, and structured validation cycles under real-world aquatic constraints." },
+  { year: "2025–2026", name: "NEMO", desc: "Current generation platform emphasizing modular architecture, distributed software systems, and scalable research integration.", current: true },
 ];
 
 const OurAUV = () => (
   <SectionWrapper id="our-auv">
-    <SectionHeading title="Our AUV" subtitle="Engineered for the deep — built for competition" />
+    <SectionHeading title="Vehicle Generations" subtitle="Each platform represents measurable advancement in system capability" />
 
-    {/* AUV Image */}
-    <div className="relative max-w-4xl mx-auto mb-16 rounded-2xl overflow-hidden glow-aqua">
-      <img src={heroImage} alt="Team SRM AUV" className="w-full h-64 md:h-96 object-cover" />
-      <div className="absolute inset-0 bg-gradient-to-t from-deep/80 to-transparent" />
-    </div>
+    <div className="relative max-w-3xl mx-auto">
+      {/* Vertical line */}
+      <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-ocean via-aqua to-ocean/30" />
 
-    {/* Specs */}
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
-      {specs.map((s, i) => (
+      {vehicles.map((v, i) => (
         <motion.div
-          key={s.label}
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: i * 0.1 }}
-          className="glass-card p-6 text-center group hover:glow-aqua transition-all duration-500"
-        >
-          <s.icon className="mx-auto mb-3 text-accent" size={24} />
-          <p className="text-muted-foreground text-xs uppercase tracking-wider mb-1">{s.label}</p>
-          <p className="font-orbitron font-semibold text-lg">{s.value}</p>
-        </motion.div>
-      ))}
-    </div>
-
-    {/* Features */}
-    <div className="grid md:grid-cols-2 gap-6">
-      {features.map((f, i) => (
-        <motion.div
-          key={f.title}
+          key={v.name}
           initial={{ opacity: 0, x: i % 2 === 0 ? -30 : 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
-          transition={{ delay: i * 0.1, duration: 0.5 }}
-          className="glass-card p-6 flex gap-5 group hover:glow-aqua transition-all duration-500"
+          transition={{ delay: i * 0.12, duration: 0.5 }}
+          className={`relative flex items-start mb-12 ${i % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"} flex-row`}
         >
-          <div className="w-12 h-12 shrink-0 rounded-lg bg-gradient-to-br from-ocean/20 to-aqua/20 flex items-center justify-center">
-            <f.icon className="text-accent" size={22} />
-          </div>
-          <div>
-            <h4 className="font-orbitron font-semibold mb-2">{f.title}</h4>
-            <p className="text-muted-foreground text-sm leading-relaxed">{f.desc}</p>
+          <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-accent glow-aqua-strong z-10 mt-1" />
+          <div className={`ml-12 md:ml-0 md:w-[45%] ${i % 2 === 0 ? "md:pr-12 md:text-right" : "md:pl-12"}`}>
+            {v.year !== "—" && <span className="font-orbitron text-accent text-sm font-bold">{v.year}</span>}
+            <h4 className="font-orbitron font-semibold text-xl mt-1 flex items-center gap-2 justify-start md:justify-inherit">
+              {v.name}
+              {v.current && (
+                <span className="text-xs bg-accent/20 text-accent px-2 py-0.5 rounded-full font-normal">Current</span>
+              )}
+            </h4>
+            <p className="text-muted-foreground text-sm mt-2">{v.desc}</p>
           </div>
         </motion.div>
       ))}

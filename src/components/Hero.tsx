@@ -19,16 +19,10 @@ const Hero = () => {
       {/* Animated wave overlay at bottom */}
       <div className="absolute bottom-0 left-0 right-0 h-32 overflow-hidden">
         <svg className="absolute bottom-0 w-[200%] animate-wave" viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path
-            d="M0,60 C360,120 720,0 1080,60 C1260,90 1350,30 1440,60 L1440,120 L0,120 Z"
-            fill="hsl(213 80% 8% / 0.6)"
-          />
+          <path d="M0,60 C360,120 720,0 1080,60 C1260,90 1350,30 1440,60 L1440,120 L0,120 Z" fill="hsl(213 80% 8% / 0.6)" />
         </svg>
         <svg className="absolute bottom-0 w-[200%] animate-wave" style={{ animationDelay: "-3s", animationDuration: "10s" }} viewBox="0 0 1440 120" preserveAspectRatio="none">
-          <path
-            d="M0,80 C360,20 720,100 1080,40 C1260,60 1350,80 1440,40 L1440,120 L0,120 Z"
-            fill="hsl(213 80% 8% / 0.4)"
-          />
+          <path d="M0,80 C360,20 720,100 1080,40 C1260,60 1350,80 1440,40 L1440,120 L0,120 Z" fill="hsl(213 80% 8% / 0.4)" />
         </svg>
       </div>
 
@@ -47,26 +41,27 @@ const Hero = () => {
             Team SRM — Autonomous Underwater Vehicle
           </p>
           <h1 className="font-orbitron font-bold text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">
-            Exploring Innovation
+            Engineering Depths,
             <br />
-            <span className="text-gradient">Beneath the Surface</span>
+            <span className="text-gradient">Navigating the Future</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
-            Team SRM is a student-driven Autonomous Underwater Vehicle team focused on
-            robotics, AI, and marine engineering excellence.
+            Established in 2013, Team SRM AUV is the official Autonomous Underwater Vehicle team
+            of SRM Institute of Science and Technology — designing, developing, and deploying
+            intelligent underwater robotic systems.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
-              onClick={() => document.getElementById("our-auv")?.scrollIntoView({ behavior: "smooth" })}
+              onClick={() => document.getElementById("nemo")?.scrollIntoView({ behavior: "smooth" })}
               className="px-8 py-4 rounded-lg font-semibold bg-gradient-to-r from-ocean to-accent text-foreground glow-aqua hover:glow-aqua-strong transition-all duration-300 hover:scale-105"
             >
-              Explore Our AUV
+              Explore NEMO
             </button>
             <button
               onClick={() => document.getElementById("contact-us")?.scrollIntoView({ behavior: "smooth" })}
               className="px-8 py-4 rounded-lg font-semibold border border-accent/50 text-accent hover:bg-accent/10 transition-all duration-300 hover:scale-105"
             >
-              Join the Team
+              Partner With Us
             </button>
           </div>
         </motion.div>

@@ -3,7 +3,7 @@ import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navItems = [
-  "Home", "About Us", "Our AUV", "Lab & Research",
+  "Home", "About Us", "Our AUV", "Lab & Research", "NEMO",
   "Achievements", "Team", "Gallery", "Sponsorship", "Contact Us",
 ];
 

@@ -27,7 +27,7 @@ const Sponsorship = () => (
 
     {/* Institutional Support */}
     <h3 className="font-orbitron font-semibold text-center text-lg mb-6">Institutional & Government Support</h3>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-12">
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-12 max-w-4xl mx-auto">
       {institutional.map((s, i) => (
         <motion.div
           key={s}

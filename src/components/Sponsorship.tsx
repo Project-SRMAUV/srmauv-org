@@ -61,7 +61,7 @@ const Sponsorship = () => (
 
     {/* Why Partner */}
     <h3 className="font-orbitron font-semibold text-center text-lg mb-6">Why Partner With Us</h3>
-    <div className="max-w-3xl mx-auto mb-12">
+    <div className="max-w-2xl mx-auto mb-12 pl-8 md:pl-16">
       <ul className="space-y-3">
         {benefits.map((b) => (
           <li key={b} className="text-muted-foreground text-sm flex items-start gap-2">

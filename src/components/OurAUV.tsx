@@ -39,7 +39,7 @@ const OurAUV = () => (
             <div className="absolute left-4 md:left-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-accent glow-aqua-strong z-10 mt-1" />
             <div className={`ml-12 md:ml-0 md:w-[45%] ${isEven ? "md:pl-12 md:text-left" : "md:pr-12 md:text-right"}`}>
               {v.year !== "—" && <span className="font-orbitron text-accent text-sm font-bold">{v.year}</span>}
-              <h4 className="font-orbitron font-semibold text-xl mt-1 flex items-center gap-3 justify-start">
+              <h4 className={`font-orbitron font-semibold text-xl mt-1 flex items-center gap-3 ${isEven ? "justify-start" : "justify-end"}`}>
                 {v.name}
                 {v.current && (
                   <span className="text-xs bg-accent/20 text-accent px-2 py-0.5 rounded-full font-normal">Current</span>

@@ -164,7 +164,7 @@ const NemoProject = () => (
 
     {/* Core Design Objectives */}
     <h3 className="font-orbitron font-semibold text-xl text-center mb-8">Core Design Objectives</h3>
-    <div className="grid md:grid-cols-3 gap-4 mb-16 max-w-5xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-4 mb-16 max-w-5xl mx-auto">
       {designObjectives.map((obj, i) => (
         <motion.div
           key={obj.title}
@@ -172,7 +172,7 @@ const NemoProject = () => (
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.08 }}
-          className="glass-card p-5 group hover:glow-aqua transition-all duration-500"
+          className="glass-card p-5 group hover:glow-aqua transition-all duration-500 w-[calc(33.333%-1rem)] min-w-[200px]"
         >
           <obj.icon className="mb-3 text-accent" size={24} />
           <h4 className="font-orbitron text-sm font-semibold mb-3">{obj.title}</h4>

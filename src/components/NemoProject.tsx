@@ -164,7 +164,7 @@ const NemoProject = () => (
 
     {/* Core Design Objectives */}
     <h3 className="font-orbitron font-semibold text-xl text-center mb-8">Core Design Objectives</h3>
-    <div className="grid md:grid-cols-3 gap-4 mb-16 max-w-5xl mx-auto">
+    <div className="flex flex-wrap justify-center gap-4 mb-16 max-w-5xl mx-auto">
       {designObjectives.map((obj, i) => (
         <motion.div
           key={obj.title}

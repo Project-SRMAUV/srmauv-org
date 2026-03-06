@@ -5,10 +5,10 @@ import { motion, useInView } from "framer-motion";
 import { Trophy, Calendar, Users, Award, Globe, MapPin } from "lucide-react";
 
 const achievements = [
-  "National Champions at NIOT SAVe Competition",
-  "Top International Finish at SAUVC",
-  "Third Place at NEXUS 2024",
   "Winner at MarianX 2025",
+  "National Champions at NIOT SAVe Competition",
+  "Third Place at NEXUS 2024",
+  "Top International Finish at SAUVC",
 ];
 
 const recognition = [
@@ -66,8 +66,7 @@ const Achievements = () => (
     <SectionHeading title="Achievements & Competitions" subtitle="Technical consistency, innovation, and competitive credibility" />
 
     {/* Counters */}
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20">
-      <Counter end={12} label="Years Active" icon={Calendar} />
+    <div className="grid grid-cols-3 gap-8 mb-20 max-w-2xl mx-auto">
       <Counter end={10} label="Competitions" icon={Trophy} />
       <Counter end={6} label="Awards" icon={Award} />
       <Counter end={50} label="Team Members" icon={Users} />

@@ -3,7 +3,25 @@ import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 
 const institutional = ["SRM Institute of Science and Technology", "Directorate of Sports, SRMIST", "Government of India", "National Institute of Ocean Technology", "IEEE Oceanic Engineering Society"];
-const industry = ["NVIDIA", "Blue Robotics", "Dassault Systèmes SOLIDWORKS", "Altium", "PCB Power Market", "MATLAB", "Water Linked", "Navicom Technology International"];
+import nvidiaLogo from "@/assets/sponsors/nvidia.png";
+import blueroboticsLogo from "@/assets/sponsors/bluerobotics.png";
+import solidworksLogo from "@/assets/sponsors/solidworks.png";
+import altiumLogo from "@/assets/sponsors/altium.png";
+import pcbpowerLogo from "@/assets/sponsors/pcbpower.png";
+import matlabLogo from "@/assets/sponsors/matlab.png";
+import waterlinkedLogo from "@/assets/sponsors/waterlinked.png";
+import navicomLogo from "@/assets/sponsors/navicom.png";
+
+const industry = [
+  { name: "NVIDIA", logo: nvidiaLogo },
+  { name: "Blue Robotics", logo: blueroboticsLogo },
+  { name: "Dassault Systèmes SOLIDWORKS", logo: solidworksLogo },
+  { name: "Altium", logo: altiumLogo },
+  { name: "PCB Power Market", logo: pcbpowerLogo },
+  { name: "MATLAB", logo: matlabLogo },
+  { name: "Water Linked", logo: waterlinkedLogo },
+  { name: "Navicom Technology International", logo: navicomLogo },
+];
 
 const benefits = [
   "Direct engagement with high-performing multidisciplinary engineering talent",
@@ -44,17 +62,17 @@ const Sponsorship = () => (
 
     {/* Industry Sponsors */}
     <h3 className="font-orbitron font-semibold text-center text-lg mb-6">Industry & Technical Sponsors</h3>
-    <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-16">
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 max-w-4xl mx-auto">
       {industry.map((s, i) => (
         <motion.div
-          key={s}
+          key={s.name}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: i * 0.06 }}
-          className="glass-card p-5 flex items-center justify-center hover:glow-aqua transition-all duration-500"
+          className="glass-card p-5 flex items-center justify-center hover:glow-aqua transition-all duration-500 bg-white/5"
         >
-          <span className="font-orbitron text-xs font-semibold text-muted-foreground text-center">{s}</span>
+          <img src={s.logo} alt={s.name} className="h-10 md:h-12 object-contain max-w-full" />
         </motion.div>
       ))}
     </div>

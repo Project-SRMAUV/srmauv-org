@@ -82,10 +82,17 @@ const Contact = () => {
           <div>
             <h4 className="font-semibold mb-4">Follow Us</h4>
             <div className="flex gap-4">
-              {[Instagram, Linkedin, Twitter, Youtube].map((Icon, i) => (
+              {[
+                { Icon: Instagram, href: "https://www.instagram.com/srm.auv/" },
+                { Icon: Linkedin, href: "https://www.linkedin.com/company/team-srmauv/" },
+                { Icon: Twitter, href: "#" },
+                { Icon: Youtube, href: "#" },
+              ].map(({ Icon, href }, i) => (
                 <a
                   key={i}
-                  href="#"
+                  href={href}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="w-11 h-11 rounded-lg bg-secondary/50 border border-border/50 flex items-center justify-center text-muted-foreground hover:text-accent hover:glow-aqua transition-all duration-300"
                 >
                   <Icon size={20} />

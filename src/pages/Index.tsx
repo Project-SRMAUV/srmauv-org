@@ -12,9 +12,11 @@ import Sponsorship from "@/components/Sponsorship";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import RippleDivider from "@/components/RippleDivider";
+import CursorGlow from "@/components/CursorGlow";
 
 const Index = () => (
   <div className="min-h-screen ocean-gradient">
+    <CursorGlow />
     <Navbar />
     <Hero />
     <RippleDivider />

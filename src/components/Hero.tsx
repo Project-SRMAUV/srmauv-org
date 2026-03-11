@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import heroImage from "@/assets/hero-auv.jpg";
+import heroImage from "@/assets/nemo-underwater.png";
 
 const Hero = () => {
   const scrollToAbout = () => {

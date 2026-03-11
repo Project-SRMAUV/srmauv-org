@@ -4,13 +4,24 @@ import SectionHeading from "./SectionHeading";
 import { motion, AnimatePresence } from "framer-motion";
 import { X } from "lucide-react";
 
+import auvTesting from "@/assets/gallery/auv-testing.png";
+import teamPhoto from "@/assets/gallery/team-photo.png";
+import awardCeremony from "@/assets/gallery/award-ceremony.png";
+import competitionDay from "@/assets/gallery/competition-day.png";
+import labWorkshop1 from "@/assets/gallery/lab-workshop-1.png";
+import labWorkshop2 from "@/assets/gallery/lab-workshop-2.png";
+import poolTrials1 from "@/assets/gallery/pool-trials-1.png";
+import poolTrials2 from "@/assets/gallery/pool-trials-2.png";
+
 const galleryItems = [
-  { title: "AUV Testing", color: "from-ocean/40 to-aqua/20" },
-  { title: "Competition Day", color: "from-blue-600/40 to-cyan-400/20" },
-  { title: "Lab Workshop", color: "from-indigo-500/40 to-blue-400/20" },
-  { title: "Team Photo", color: "from-teal-500/40 to-emerald-400/20" },
-  { title: "Pool Trials", color: "from-cyan-600/40 to-sky-400/20" },
-  { title: "Award Ceremony", color: "from-blue-500/40 to-violet-400/20" },
+  { title: "AUV Testing", image: auvTesting },
+  { title: "Team Photo", image: teamPhoto },
+  { title: "Award Ceremony", image: awardCeremony },
+  { title: "Competition Day", image: competitionDay },
+  { title: "Lab Workshop", image: labWorkshop1 },
+  { title: "Lab Workshop", image: labWorkshop2 },
+  { title: "Pool Trials", image: poolTrials1 },
+  { title: "Pool Trials", image: poolTrials2 },
 ];
 
 const Gallery = () => {
@@ -19,7 +30,7 @@ const Gallery = () => {
   return (
     <SectionWrapper id="gallery">
       <SectionHeading title="Gallery" subtitle="Moments from our journey" />
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {galleryItems.map((item, i) => (
           <motion.button
             key={i}
@@ -28,10 +39,11 @@ const Gallery = () => {
             viewport={{ once: true }}
             transition={{ delay: i * 0.08 }}
             onClick={() => setSelected(i)}
-            className={`relative aspect-video rounded-xl overflow-hidden bg-gradient-to-br ${item.color} group cursor-pointer border border-border/30 hover:glow-aqua transition-all duration-500`}
+            className="relative aspect-video rounded-xl overflow-hidden group cursor-pointer border border-border/30 hover:glow-aqua transition-all duration-500"
           >
-            <div className="absolute inset-0 flex items-center justify-center">
-              <span className="font-orbitron text-sm md:text-base font-semibold text-foreground/80 group-hover:scale-110 transition-transform duration-300">
+            <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+            <div className="absolute inset-0 bg-deep/50 group-hover:bg-deep/30 transition-colors duration-300 flex items-end p-3">
+              <span className="font-orbitron text-xs md:text-sm font-semibold text-foreground/90">
                 {item.title}
               </span>
             </div>
@@ -52,9 +64,11 @@ const Gallery = () => {
             <button className="absolute top-6 right-6 text-foreground hover:text-accent transition-colors">
               <X size={32} />
             </button>
-            <div className={`w-full max-w-3xl aspect-video rounded-2xl bg-gradient-to-br ${galleryItems[selected].color} flex items-center justify-center glow-aqua-strong`}>
-              <span className="font-orbitron text-2xl font-bold">{galleryItems[selected].title}</span>
-            </div>
+            <img
+              src={galleryItems[selected].image}
+              alt={galleryItems[selected].title}
+              className="max-w-full max-h-[80vh] rounded-2xl object-contain glow-aqua-strong"
+            />
           </motion.div>
         )}
       </AnimatePresence>

@@ -8,20 +8,16 @@ import auvTesting from "@/assets/gallery/auv-testing.png";
 import teamPhoto from "@/assets/gallery/team-photo.png";
 import awardCeremony from "@/assets/gallery/award-ceremony.png";
 import competitionDay from "@/assets/gallery/competition-day.png";
-import labWorkshop1 from "@/assets/gallery/lab-workshop-1.png";
-import labWorkshop2 from "@/assets/gallery/lab-workshop-2.png";
-import poolTrials1 from "@/assets/gallery/pool-trials-1.png";
-import poolTrials2 from "@/assets/gallery/pool-trials-2.png";
+import labWorkshop from "@/assets/gallery/lab-workshop.png";
+import poolTrials from "@/assets/gallery/pool-trials.png";
 
 const galleryItems = [
   { title: "AUV Testing", image: auvTesting },
   { title: "Team Photo", image: teamPhoto },
   { title: "Award Ceremony", image: awardCeremony },
   { title: "Competition Day", image: competitionDay },
-  { title: "Lab Workshop", image: labWorkshop1 },
-  { title: "Lab Workshop", image: labWorkshop2 },
-  { title: "Pool Trials", image: poolTrials1 },
-  { title: "Pool Trials", image: poolTrials2 },
+  { title: "Lab Workshop", image: labWorkshop },
+  { title: "Pool Trials", image: poolTrials },
 ];
 
 const Gallery = () => {
@@ -30,7 +26,7 @@ const Gallery = () => {
   return (
     <SectionWrapper id="gallery">
       <SectionHeading title="Gallery" subtitle="Moments from our journey" />
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {galleryItems.map((item, i) => (
           <motion.button
             key={i}

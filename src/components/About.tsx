@@ -14,7 +14,7 @@ const capabilities = [
 
 const About = () => (
   <SectionWrapper id="about-us" className="section-gradient">
-    <SectionHeading title="About Team SRM AUV" subtitle="Engineering Depths, Navigating the Future" />
+    <SectionHeading title="About Team SRM AUV" subtitle="Engineering Depths, Navigating Future" />
     <div className="max-w-4xl mx-auto text-center mb-12">
       <p className="text-muted-foreground text-lg leading-relaxed mb-6">
         Established in 2013, Team SRM AUV is the official Autonomous Underwater Vehicle team of

@@ -90,7 +90,7 @@ const Sponsorship = () => (
     </div>
 
     <div className="text-center">
-      <p className="text-muted-foreground italic mb-6">Together, we engineer depth and navigate the future.</p>
+      <p className="text-muted-foreground italic mb-6">Together, we engineer depths and navigate future.</p>
       <button className="px-8 py-4 rounded-lg font-semibold bg-gradient-to-r from-ocean to-accent text-foreground glow-aqua hover:glow-aqua-strong transition-all duration-300 hover:scale-105">
         Become a Sponsor
       </button>

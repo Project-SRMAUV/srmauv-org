@@ -20,7 +20,7 @@ const galleryItems = [
   { title: "Team Photo", image: teamPhoto, lightboxImages: [teamPhoto] },
   { title: "Award Ceremony", image: awardCeremony, lightboxImages: [awardCeremony] },
   { title: "Competition Day", image: competitionDay, lightboxImages: [competitionDay] },
-  { title: "Lab Workshop", image: labWorkshop, lightboxImages: [labWorkshop1, labWorkshop2] },
+  { title: "Lab Workshop", image: labWorkshop1, lightboxImages: [labWorkshop1, labWorkshop2] },
   { title: "Pool Trials", image: poolTrials, lightboxImages: [poolTrials1, poolTrials2] },
 ];
 

@@ -4,7 +4,6 @@ import About from "@/components/About";
 import OurAUV from "@/components/OurAUV";
 import LabResearch from "@/components/LabResearch";
 import NemoProject from "@/components/NemoProject";
-import Norway2024 from "@/components/Norway2024";
 import Achievements from "@/components/Achievements";
 import TeamSection from "@/components/TeamSection";
 import Gallery from "@/components/Gallery";
@@ -27,8 +26,6 @@ const Index = () => (
     <OurAUV />
     <RippleDivider />
     <NemoProject />
-    <RippleDivider />
-    <Norway2024 />
     <RippleDivider />
     <Achievements />
     <RippleDivider />

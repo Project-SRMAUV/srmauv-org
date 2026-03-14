@@ -26,7 +26,6 @@ const industry = [
 const benefits = [
   "Direct engagement with high-performing multidisciplinary engineering talent",
   "Brand visibility at international competitions and national exhibitions",
-  "Logo placement on vehicles, apparel, and technical documentation",
   "Exposure across conferences, exhibitions, and research publications",
   "Access to a recruitment pipeline trained in real-world robotics system integration",
 ];

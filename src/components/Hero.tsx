@@ -43,7 +43,7 @@ const Hero = () => {
           <h1 className="font-orbitron font-bold text-4xl md:text-6xl lg:text-7xl leading-tight mb-6">
             Engineering Depths,
             <br />
-            <span className="text-gradient">Navigating the Future</span>
+            <span className="text-gradient">Navigating Future</span>
           </h1>
           <p className="text-muted-foreground text-lg md:text-xl max-w-3xl mx-auto mb-10 leading-relaxed">
             Established in 2013, Team SRM AUV is the official Autonomous Underwater Vehicle team

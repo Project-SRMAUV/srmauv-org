@@ -5,6 +5,7 @@ import { motion, useInView } from "framer-motion";
 import { Trophy, Calendar, Users, Award, Globe, MapPin } from "lucide-react";
 
 const achievements = [
+  "Representing India at the Underwater Robotics Challenge in Norway (2024)",
   "Winner at MarianX 2025",
   "National Champions at NIOT SAVe Competition",
   "Third Place at NEXUS 2024",

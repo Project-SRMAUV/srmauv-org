@@ -32,6 +32,8 @@ const Index = () => (
     <RippleDivider />
     <TeamSection />
     <RippleDivider />
+    <TeamMembers />
+    <RippleDivider />
     <Gallery />
     <RippleDivider />
     <Sponsorship />

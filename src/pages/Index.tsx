@@ -6,6 +6,7 @@ import LabResearch from "@/components/LabResearch";
 import NemoProject from "@/components/NemoProject";
 import Achievements from "@/components/Achievements";
 import TeamSection from "@/components/TeamSection";
+import TeamMembers from "@/components/TeamMembers";
 import Gallery from "@/components/Gallery";
 import Sponsorship from "@/components/Sponsorship";
 import Contact from "@/components/Contact";
@@ -30,6 +31,8 @@ const Index = () => (
     <Achievements />
     <RippleDivider />
     <TeamSection />
+    <RippleDivider />
+    <TeamMembers />
     <RippleDivider />
     <Gallery />
     <RippleDivider />

@@ -13,12 +13,12 @@ import waterlinkedLogo from "@/assets/sponsors/waterlinked.png";
 import navicomLogo from "@/assets/sponsors/navicom.png";
 
 const industry = [
-  { name: "NVIDIA", logo: nvidiaLogo },
-  { name: "Blue Robotics", logo: blueroboticsLogo },
+  { name: "NVIDIA", logo: nvidiaLogo, size: "h-14 md:h-18" },
+  { name: "Blue Robotics", logo: blueroboticsLogo, size: "h-14 md:h-18" },
   { name: "Dassault Systèmes SOLIDWORKS", logo: solidworksLogo },
-  { name: "Altium", logo: altiumLogo },
+  { name: "Altium", logo: altiumLogo, size: "h-14 md:h-18" },
   { name: "PCB Power Market", logo: pcbpowerLogo },
-  { name: "MATLAB", logo: matlabLogo },
+  { name: "MATLAB", logo: matlabLogo, size: "h-14 md:h-18" },
   { name: "Water Linked", logo: waterlinkedLogo },
   { name: "Navicom Technology International", logo: navicomLogo },
 ];
@@ -71,7 +71,7 @@ const Sponsorship = () => (
           transition={{ delay: i * 0.06 }}
           className="glass-card p-5 flex items-center justify-center hover:glow-aqua transition-all duration-500 bg-white/5"
         >
-          <img src={s.logo} alt={s.name} className="h-10 md:h-12 object-contain max-w-full" />
+          <img src={s.logo} alt={s.name} className={`${s.size || "h-10 md:h-12"} object-contain max-w-full`} />
         </motion.div>
       ))}
     </div>

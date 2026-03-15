@@ -18,7 +18,7 @@ const industry = [
   { name: "Dassault Systèmes SOLIDWORKS", logo: solidworksLogo },
   { name: "Altium", logo: altiumLogo, size: "h-20 md:h-24" },
   { name: "PCB Power Market", logo: pcbpowerLogo },
-  { name: "MATLAB", logo: matlabLogo, size: "h-14 md:h-18" },
+  { name: "MATLAB", logo: matlabLogo, size: "h-20 md:h-24" },
   { name: "Water Linked", logo: waterlinkedLogo },
   { name: "Navicom Technology International", logo: navicomLogo },
 ];

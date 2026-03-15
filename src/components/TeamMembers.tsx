@@ -40,7 +40,7 @@ const members: Member[] = [
   { name: "Nivedha Rajagopal", domain: "Electrical", tagline: "Quiet creativity, infinite depth.", photo: nivedha },
   { name: "Shrudeep SR", domain: "Mechanical", tagline: "Every bolt you tighten brings you one step closer to your dream", photo: shrudeep },
   { name: "Srinidhi Dwarakanathan", domain: "Software", tagline: "Dream, learn, achieve.", photo: srinidhi },
-  { name: "M G Aditya", domain: "Electrical", tagline: "Keep Going", photo: aditya },
+  
   { name: "Pradesh PJ", domain: "Mechanical", tagline: "Try until we win 🔥", photo: pradesh },
   { name: "Abhinav S", domain: "Software", tagline: "Ideae Superant Rationem", photo: abhinav },
   { name: "Akarsh Agrawal", domain: "Electrical", tagline: "Think Big", photo: akarsh },

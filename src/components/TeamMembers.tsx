@@ -31,6 +31,7 @@ const leads: Member[] = [
   { name: "Dharini Sakthivel", domain: "Mechanical", position: "Mechanical Lead", tagline: "Crafting stories that feel, and systems that work", photo: dharini },
   { name: "Shylendran S", domain: "Electrical", position: "Electrical Lead", tagline: "Driven by curiosity", photo: shylendran },
   { name: "Mohitha Swaminathan", domain: "Corporate", position: "Corporate Lead", tagline: "A proper mess, but oddly endearing :)", photo: mohitha },
+  { name: "M G Aditya", domain: "Electrical", position: "Team Manager", tagline: "Keep Going", photo: aditya },
 ];
 
 const members: Member[] = [

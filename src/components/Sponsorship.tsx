@@ -13,10 +13,10 @@ import waterlinkedLogo from "@/assets/sponsors/waterlinked.png";
 import navicomLogo from "@/assets/sponsors/navicom.png";
 
 const industry = [
-  { name: "NVIDIA", logo: nvidiaLogo, size: "h-14 md:h-18" },
-  { name: "Blue Robotics", logo: blueroboticsLogo, size: "h-14 md:h-18" },
+  { name: "NVIDIA", logo: nvidiaLogo, size: "h-20 md:h-24" },
+  { name: "Blue Robotics", logo: blueroboticsLogo, size: "h-20 md:h-24" },
   { name: "Dassault Systèmes SOLIDWORKS", logo: solidworksLogo },
-  { name: "Altium", logo: altiumLogo, size: "h-14 md:h-18" },
+  { name: "Altium", logo: altiumLogo, size: "h-20 md:h-24" },
   { name: "PCB Power Market", logo: pcbpowerLogo },
   { name: "MATLAB", logo: matlabLogo, size: "h-14 md:h-18" },
   { name: "Water Linked", logo: waterlinkedLogo },

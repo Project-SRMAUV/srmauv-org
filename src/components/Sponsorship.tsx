@@ -71,7 +71,7 @@ const Sponsorship = () => (
           transition={{ delay: i * 0.06 }}
           className="glass-card p-5 flex items-center justify-center hover:glow-aqua transition-all duration-500 bg-white/5"
         >
-          <img src={s.logo} alt={s.name} className="h-10 md:h-12 object-contain max-w-full" />
+          <img src={s.logo} alt={s.name} className={`${s.size || "h-10 md:h-12"} object-contain max-w-full`} />
         </motion.div>
       ))}
     </div>

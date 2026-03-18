@@ -48,7 +48,7 @@ const OurAUV = () => (
               </h4>
               {v.img && (
                 <div className="mt-3 rounded-lg overflow-hidden border border-border/30">
-                  <img src={v.img} alt={v.name} className="w-full h-32 object-cover" />
+                  <img src={v.img} alt={v.name} className="w-full h-32 object-contain mx-auto" />
                 </div>
               )}
               <p className="text-muted-foreground text-sm mt-2">{v.desc}</p>

@@ -8,8 +8,8 @@ import vatkhdImg from "@/assets/vehicles/vatkhd.png";
 
 const vehicles = [
   { year: "2014–2016", name: "Sedna", desc: "Established foundational underwater navigation and multi-axis control systems.", img: sednaImg },
-  { year: "—", name: "Alpheus", desc: "Improved structural robustness and subsystem coordination, enhancing maneuverability and reliability.", img: alpheusImg },
-  { year: "—", name: "Zarna", desc: "Advanced mission readiness with enhanced sensing capabilities and structured task execution mechanisms.", img: zarnaImg },
+  { year: "2017", name: "Alpheus", desc: "Improved structural robustness and subsystem coordination, enhancing maneuverability and reliability.", img: alpheusImg },
+  { year: "2018–2019", name: "Zarna", desc: "Advanced mission readiness with enhanced sensing capabilities and structured task execution mechanisms.", img: zarnaImg },
   { year: "2023–2024", name: "Vatkhd", desc: "Focused on navigation refinement, perception enhancement, and structured validation cycles under real-world aquatic constraints.", img: vatkhdImg },
   { year: "2025–2026", name: "NEMO", desc: "Current generation platform emphasizing modular architecture, distributed software systems, and scalable research integration.", current: true },
 ];

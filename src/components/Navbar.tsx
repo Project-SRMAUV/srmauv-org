@@ -61,9 +61,12 @@ const Navbar = () => {
       }`}
     >
       <div className="container mx-auto px-4 md:px-8 flex items-center justify-between h-16 md:h-20">
-        <button onClick={() => scrollTo("Home")} className="font-orbitron font-bold text-lg md:text-xl tracking-wider">
-          <span className="text-foreground">TEAM SRM</span>{" "}
-          <span className="text-accent">AUV</span>
+        <button onClick={() => scrollTo("Home")} className="font-orbitron font-bold text-lg md:text-xl tracking-wider flex items-center gap-2">
+          <img src={logoAuv} alt="AUV Logo" className="h-8 md:h-10 w-auto" />
+          <span>
+            <span className="text-foreground">TEAM SRM</span>{" "}
+            <span className="text-accent">AUV</span>
+          </span>
         </button>
 
         {/* Desktop */}

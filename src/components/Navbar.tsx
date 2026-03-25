@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import logoAuv from "@/assets/logo_auv.png";
 import { Menu, X, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 

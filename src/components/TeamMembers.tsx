@@ -14,7 +14,6 @@ import shrudeep from "@/assets/team/shrudeep.jpg";
 import srinidhi from "@/assets/team/srinidhi.jpg";
 import aditya from "@/assets/team/aditya.jpg";
 import pradesh from "@/assets/team/pradesh.jpg";
-import abhinav from "@/assets/team/abhinav.jpg";
 import akarsh from "@/assets/team/akarsh.jpg";
 
 type Member = {
@@ -26,24 +25,26 @@ type Member = {
 };
 
 const leads: Member[] = [
-  { name: "Preetham M", domain: "Mechanical", position: "Team Lead", tagline: "Shoot for the moon even if you miss you will land among the stars", photo: preetham },
-  { name: "Arunkumar S", domain: "Software", position: "Software Lead", tagline: "Precision in every move, purpose in every step.", photo: arunkumar },
-  { name: "Dharini Sakthivel", domain: "Mechanical", position: "Mechanical Lead", tagline: "Crafting stories that feel, and systems that work", photo: dharini },
-  { name: "Shylendran S", domain: "Electrical", position: "Electrical Lead", tagline: "Driven by curiosity", photo: shylendran },
+  { name: "Denson", domain: "Mechanical", position: "Team Lead", tagline: "Leading the team forward.", photo: "/placeholder.svg" },
+  { name: "Srinidhi Dwarakanathan", domain: "Software", position: "Software Lead", tagline: "Dream, learn, achieve.", photo: srinidhi },
+  { name: "Dheeraja Kambhampati", domain: "Electrical", position: "Electrical Lead", tagline: "Brains, Balance and a hint of Bold", photo: dheeraja },
   { name: "Mohitha Swaminathan", domain: "Corporate", position: "Corporate Lead", tagline: "A proper mess, but oddly endearing :)", photo: mohitha },
   { name: "M G Aditya", domain: "Electrical", position: "Team Manager", tagline: "Keep Going", photo: aditya },
 ];
 
 const members: Member[] = [
-  { name: "Dheeraja Kambhampati", domain: "Electrical", tagline: "Brains, Balance and a hint of Bold", photo: dheeraja },
   { name: "Harshika R A", domain: "Electrical", tagline: "Growing with team", photo: harshika },
   { name: "Nivedha Rajagopal", domain: "Electrical", tagline: "Quiet creativity, infinite depth.", photo: nivedha },
-  { name: "Shrudeep SR", domain: "Mechanical", tagline: "Every bolt you tighten brings you one step closer to your dream", photo: shrudeep },
-  { name: "Srinidhi Dwarakanathan", domain: "Software", tagline: "Dream, learn, achieve.", photo: srinidhi },
-  
   { name: "Pradesh PJ", domain: "Mechanical", tagline: "Try until we win 🔥", photo: pradesh },
-  { name: "Abhinav S", domain: "Software", tagline: "Ideae Superant Rationem", photo: abhinav },
   { name: "Akarsh Agrawal", domain: "Electrical", tagline: "Think Big", photo: akarsh },
+];
+
+const exMembers: Member[] = [
+  { name: "Preetham M", domain: "Mechanical", position: "Former Team Lead", tagline: "Shoot for the moon even if you miss you will land among the stars", photo: preetham },
+  { name: "Arunkumar S", domain: "Software", position: "Former Software Lead", tagline: "Precision in every move, purpose in every step.", photo: arunkumar },
+  { name: "Dharini Sakthivel", domain: "Mechanical", position: "Former Mechanical Lead", tagline: "Crafting stories that feel, and systems that work", photo: dharini },
+  { name: "Shylendran S", domain: "Electrical", position: "Former Electrical Lead", tagline: "Driven by curiosity", photo: shylendran },
+  { name: "Shrudeep SR", domain: "Mechanical", tagline: "Every bolt you tighten brings you one step closer to your dream", photo: shrudeep },
 ];
 
 const domainColor: Record<string, string> = {
@@ -97,8 +98,16 @@ const TeamMembers = () => (
 
     {/* Members */}
     <h3 className="font-orbitron font-semibold text-center text-lg mb-8">Team Members</h3>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-16">
       {members.map((m, i) => (
+        <MemberCard key={m.name} member={m} index={i} />
+      ))}
+    </div>
+
+    {/* Ex Members */}
+    <h3 className="font-orbitron font-semibold text-center text-lg mb-8">Ex Members</h3>
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
+      {exMembers.map((m, i) => (
         <MemberCard key={m.name} member={m} index={i} />
       ))}
     </div>

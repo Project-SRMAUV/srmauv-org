@@ -68,7 +68,7 @@ const Contact = () => {
             <Mail className="text-accent shrink-0 mt-1" size={22} />
             <div>
               <h4 className="font-semibold mb-1">Email Us</h4>
-              <p className="text-muted-foreground text-sm">teamsrmauv@srmist.edu.in</p>
+              <p className="text-muted-foreground text-sm">srmauvteam@gmail.com</p>
             </div>
           </div>
           <div className="glass-card p-6 flex items-start gap-4">

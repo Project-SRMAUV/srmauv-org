@@ -15,6 +15,7 @@ import srinidhi from "@/assets/team/srinidhi.jpg";
 import aditya from "@/assets/team/aditya.jpg";
 import pradesh from "@/assets/team/pradesh.jpg";
 import akarsh from "@/assets/team/akarsh.jpg";
+import denson from "@/assets/team/denson.jpg";
 
 type Member = {
   name: string;

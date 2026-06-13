@@ -26,7 +26,7 @@ type Member = {
 };
 
 const leads: Member[] = [
-  { name: "Denson", domain: "Mechanical", position: "Team Lead", tagline: "Leading the team forward.", photo: "/placeholder.svg" },
+  { name: "Denson", domain: "Mechanical", position: "Team Lead", tagline: "Leading the team forward.", photo: denson },
   { name: "Srinidhi Dwarakanathan", domain: "Software", position: "Software Lead", tagline: "Dream, learn, achieve.", photo: srinidhi },
   { name: "Dheeraja Kambhampati", domain: "Electrical", position: "Electrical Lead", tagline: "Brains, Balance and a hint of Bold", photo: dheeraja },
   { name: "Mohitha Swaminathan", domain: "Corporate", position: "Corporate Lead", tagline: "A proper mess, but oddly endearing :)", photo: mohitha },

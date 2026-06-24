@@ -14,6 +14,7 @@ import shrudeep from "@/assets/team/shrudeep.jpg";
 import srinidhi from "@/assets/team/srinidhi.jpg";
 import aditya from "@/assets/team/aditya.jpg";
 import pradesh from "@/assets/team/pradesh.jpg";
+import prathmesh from "@/assets/team/prathmesh.jpg";
 import akarsh from "@/assets/team/akarsh.jpg";
 import denson from "@/assets/team/denson.jpg";
 
@@ -36,7 +37,8 @@ const leads: Member[] = [
 const members: Member[] = [
   { name: "Harshika R A", domain: "Electrical", tagline: "Growing with team", photo: harshika },
   { name: "Nivedha Rajagopal", domain: "Electrical", tagline: "Quiet creativity, infinite depth.", photo: nivedha },
-  { name: "Prathmesh Patil", domain: "Mechanical", tagline: "Depth isn't distance, it's mindset!", photo: pradesh },
+  { name: "Pradesh PJ", domain: "Mechanical", tagline: "Try until we win 🔥", photo: pradesh },
+  { name: "Prathmesh Patil", domain: "Mechanical", tagline: "Depth isn't distance, it's mindset!", photo: prathmesh },
   { name: "Akarsh Agrawal", domain: "Electrical", tagline: "Think Big", photo: akarsh },
 ];
 
@@ -99,7 +101,7 @@ const TeamMembers = () => (
 
     {/* Members */}
     <h3 className="font-orbitron font-semibold text-center text-lg mb-8">Team Members</h3>
-    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 mb-16">
+    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 mb-16">
       {members.map((m, i) => (
         <MemberCard key={m.name} member={m} index={i} />
       ))}

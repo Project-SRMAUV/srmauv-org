@@ -36,7 +36,7 @@ const leads: Member[] = [
 const members: Member[] = [
   { name: "Harshika R A", domain: "Electrical", tagline: "Growing with team", photo: harshika },
   { name: "Nivedha Rajagopal", domain: "Electrical", tagline: "Quiet creativity, infinite depth.", photo: nivedha },
-  { name: "Pradesh PJ", domain: "Mechanical", tagline: "Try until we win 🔥", photo: pradesh },
+  { name: "Prathmesh Patil", domain: "Mechanical", tagline: "Depth isn't distance, it's mindset!", photo: pradesh },
   { name: "Akarsh Agrawal", domain: "Electrical", tagline: "Think Big", photo: akarsh },
 ];
 

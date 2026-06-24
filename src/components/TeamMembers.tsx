@@ -6,7 +6,7 @@ import preethamAsset from "@/assets/team/preetham.png.asset.json";
 import arunkumar from "@/assets/team/arunkumar.jpg";
 import dharini from "@/assets/team/dharini.jpg";
 import shylendran from "@/assets/team/shylendran.jpg";
-import mohitha from "@/assets/team/mohitha.jpg";
+import mohithaAsset from "@/assets/team/mohitha.jpg.asset.json";
 import dheeraja from "@/assets/team/dheeraja.jpg";
 import harshika from "@/assets/team/harshika.jpg";
 import nivedha from "@/assets/team/nivedha.jpg";
@@ -30,7 +30,7 @@ const leads: Member[] = [
   { name: "Denson", domain: "Mechanical", position: "Team Lead", tagline: "Leading the team forward.", photo: denson },
   { name: "Srinidhi Dwarakanathan", domain: "Software", position: "Software Lead", tagline: "Dream, learn, achieve.", photo: srinidhi },
   { name: "Dheeraja Kambhampati", domain: "Electrical", position: "Electrical Lead", tagline: "Brains, Balance and a hint of Bold", photo: dheeraja },
-  { name: "Mohitha Swaminathan", domain: "Corporate", position: "Corporate Lead", tagline: "A proper mess, but oddly endearing :)", photo: mohitha },
+  { name: "Mohitha Swaminathan", domain: "Corporate", position: "Corporate Lead", tagline: "A proper mess, but oddly endearing :)", photo: mohithaAsset.url },
   { name: "M G Aditya", domain: "Electrical", position: "Team Manager", tagline: "Keep Going", photo: aditya },
 ];
 

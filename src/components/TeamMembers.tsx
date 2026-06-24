@@ -2,7 +2,7 @@ import SectionWrapper from "./SectionWrapper";
 import SectionHeading from "./SectionHeading";
 import { motion } from "framer-motion";
 
-import preetham from "@/assets/team/preetham.jpg";
+import preethamAsset from "@/assets/team/preetham.png.asset.json";
 import arunkumar from "@/assets/team/arunkumar.jpg";
 import dharini from "@/assets/team/dharini.jpg";
 import shylendran from "@/assets/team/shylendran.jpg";
@@ -38,12 +38,12 @@ const members: Member[] = [
   { name: "Harshika R A", domain: "Electrical", tagline: "Growing with team", photo: harshika },
   { name: "Nivedha Rajagopal", domain: "Electrical", tagline: "Quiet creativity, infinite depth.", photo: nivedha },
   { name: "Pradesh PJ", domain: "Mechanical", tagline: "Try until we win 🔥", photo: pradesh },
-  { name: "Prathmesh Patil", domain: "Mechanical", tagline: "Depth isn't distance, it's mindset!", photo: prathmesh },
+  { name: "Prathamesh Patil", domain: "Mechanical", tagline: "Depth isn't distance, it's mindset!", photo: prathmesh },
   { name: "Akarsh Agrawal", domain: "Electrical", tagline: "Think Big", photo: akarsh },
 ];
 
 const exMembers: Member[] = [
-  { name: "Preetham M", domain: "Mechanical", position: "Former Team Lead", tagline: "Shoot for the moon even if you miss you will land among the stars", photo: preetham },
+  { name: "Preetham M", domain: "Mechanical", position: "Former Team Lead", tagline: "Shoot for the moon even if you miss you will land among the stars", photo: preethamAsset.url },
   { name: "Arunkumar S", domain: "Software", position: "Former Software Lead", tagline: "Precision in every move, purpose in every step.", photo: arunkumar },
   { name: "Dharini Sakthivel", domain: "Mechanical", position: "Former Mechanical Lead", tagline: "Crafting stories that feel, and systems that work", photo: dharini },
   { name: "Shylendran S", domain: "Electrical", position: "Former Electrical Lead", tagline: "Driven by curiosity", photo: shylendran },

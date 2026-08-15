@@ -47,7 +47,7 @@ const exMembers: Member[] = [
   { name: "Dharini Sakthivel", domain: "Mechanical", position: "Former Mechanical Lead", tagline: "Crafting stories that feel, and systems that work", photo: dharini },
   { name: "Shylendran S", domain: "Electrical", position: "Former Electrical Lead", tagline: "Driven by curiosity", photo: shylendran },
   { name: "Shrudeep SR", domain: "Mechanical", tagline: "Every bolt you tighten brings you one step closer to your dream", photo: shrudeep },
-  { name: "M G Aditya", domain: "Electrical", position: "Ex Team Manager", tagline: "Keep Going", photo: aditya },
+  { name: "M G Aditya", domain: "Electrical", position: "Former Team Manager", tagline: "Keep Going", photo: aditya },
 ];
 
 const domainColor: Record<string, string> = {

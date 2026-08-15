@@ -29,15 +29,14 @@ type Member = {
 const leads: Member[] = [
   { name: "Denson", domain: "Mechanical", position: "Team Lead", tagline: "Leading the team forward.", photo: denson },
   { name: "Srinidhi Dwarakanathan", domain: "Software", position: "Software Lead", tagline: "Dream, learn, achieve.", photo: srinidhi },
-  { name: "Dheeraja Kambhampati", domain: "Electrical", position: "Electrical Lead", tagline: "Brains, Balance and a hint of Bold", photo: dheeraja },
+  { name: "Dheeraja Kambhampati", domain: "Electrical", position: "Electrical Lead & Team Manager", tagline: "Brains, Balance and a hint of Bold", photo: dheeraja },
   { name: "Mohitha Swaminathan", domain: "Corporate", position: "Corporate Lead", tagline: "A proper mess, but oddly endearing :)", photo: mohithaAsset.url },
-  { name: "M G Aditya", domain: "Electrical", position: "Team Manager", tagline: "Keep Going", photo: aditya },
+  { name: "Pradesh PJ", domain: "Mechanical", position: "Mechanical Domain Lead", tagline: "Try until we win 🔥", photo: pradesh },
 ];
 
 const members: Member[] = [
   { name: "Harshika R A", domain: "Electrical", tagline: "Growing with team", photo: harshika },
   { name: "Nivedha Rajagopal", domain: "Electrical", tagline: "Quiet creativity, infinite depth.", photo: nivedha },
-  { name: "Pradesh PJ", domain: "Mechanical", tagline: "Try until we win 🔥", photo: pradesh },
   { name: "Prathamesh Patil", domain: "Mechanical", tagline: "Depth isn't distance, it's mindset!", photo: prathmesh },
   { name: "Akarsh Agrawal", domain: "Electrical", tagline: "Think Big", photo: akarsh },
 ];
@@ -48,6 +47,7 @@ const exMembers: Member[] = [
   { name: "Dharini Sakthivel", domain: "Mechanical", position: "Former Mechanical Lead", tagline: "Crafting stories that feel, and systems that work", photo: dharini },
   { name: "Shylendran S", domain: "Electrical", position: "Former Electrical Lead", tagline: "Driven by curiosity", photo: shylendran },
   { name: "Shrudeep SR", domain: "Mechanical", tagline: "Every bolt you tighten brings you one step closer to your dream", photo: shrudeep },
+  { name: "M G Aditya", domain: "Electrical", position: "Ex Team Manager", tagline: "Keep Going", photo: aditya },
 ];
 
 const domainColor: Record<string, string> = {
